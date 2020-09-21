@@ -19,8 +19,3 @@ app.use(bodyParser.urlencoded({
 app.get("/", function(req, res){
 res.render("index");
 });
-
-
-app.listen(3000, function(){
-    console.log("app running on 3000");
-});
