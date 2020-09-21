@@ -7,8 +7,9 @@ var engines = require('consolidate');
 
 // app.use(express.static('public'));
 
-app.set('view engine', 'html');
+app.set('/');
 app.engine('html', engines.mustache);
+app.set('view engine', 'html');
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
@@ -18,3 +19,10 @@ app.use(bodyParser.urlencoded({
 app.get("/", function(req, res){
 res.render("index");
 });
+
+let port = process.env.PORT;
+  if (port == null || port == "") {
+    port = 8000;
+  }
+  console.log("Listening intently");
+  app.listen(port);
