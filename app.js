@@ -1,23 +1,26 @@
-// Initial const-requires for npm
-
-require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const jquery = require("jquery");
 const app = express();
-const mongoose = require("mongoose");
-const findOrCreate = require("mongoose-findorcreate");
+var engines = require('consolidate');
 
-//set up server
+// app.use(express.static('public'));
+
+app.set('/');
+app.engine('html', engines.mustache);
+app.set('view engine', 'html');
+
 app.use(express.static("public"));
-app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
+app.get("/", function(req, res){
+res.render("index");
+});
 
 
 app.listen(3000, function(){
-    console.log("server is up and running on localhost 3000");
+    console.log("app running on 3000");
 });
