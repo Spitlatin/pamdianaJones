@@ -7,7 +7,6 @@ var engines = require('consolidate');
 
 // app.use(express.static('public'));
 
-app.set('/');
 app.engine('html', engines.mustache);
 app.set('view engine', 'html');
 
