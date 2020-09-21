@@ -7,8 +7,8 @@ var engines = require('consolidate');
 
 // app.use(express.static('public'));
 
-app.engine('html', engines.mustache);
 app.set('view engine', 'html');
+app.engine('html', engines.mustache);
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
