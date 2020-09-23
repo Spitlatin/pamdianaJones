@@ -22,7 +22,7 @@ res.render("index");
 
 let port = process.env.PORT;
   if (port == null || port == "") {
-    port = 8000;
+    port = 3000;
   }
   console.log("Listening intently");
   app.listen(port);

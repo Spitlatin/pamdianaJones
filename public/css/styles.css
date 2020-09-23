@@ -12,7 +12,7 @@
  */
 
 
-
+/* global */
 .fa-stack {
   border: 2px solid #fed136;
   border-radius: 100%;
@@ -20,38 +20,32 @@
 .fa-stack:hover {
   /* color: #e6b301; */
   background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 100%
+  border-radius: 100%
 }
 
- @media (min-width: 768px) {
-   #socials-container {
-     transform: rotate(-14deg);
-     border: 7px solid #fed136;
-     border-radius: 10px;
-    }
-  }
+hr.yellow-rule-40 {
+  border: 1px solid #fed136;
+  width: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
- 
-  #socials-container {
-    padding: 12px;
-    background-color: rgba(25, 26, 20, .60);
-   }
+hr.yellow-rule-20 {
+  border: 1px solid #fed136;
+  width: 45%;
+}
+.border-top-round {
+  border: 0px transparent;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
 
- #socials-container  h2{
-  color: whitesmoke;
- }
- 
- #socials-container  h3{
-  color: whitesmoke;
- }
- 
- #socials-container  h4{
+footer h5 {
   font-family: "Rock Salt", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 200;
-  color: whitesmoke;
- }
+}
 
 
+/* Socials */
 #socials {
   background-color: rgba(25, 26, 20, .70);
   background-image: url("../assets/img/cameraCropped.jpg");
@@ -74,20 +68,37 @@ background-position: center;
 }
 
 
-#destinations {
-  background-color: whitesmoke;
-}
+  #socials-container {
+    padding: 12px;
+    background-color: rgba(25, 26, 20, .60);
+   }
 
-hr.yellow-rule-40 {
-  border: 1px solid #fed136;
-  width: 40%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
+ #socials-container  h2{
+  color: whitesmoke;
+ }
+ 
+ #socials-container  h3{
+  color: whitesmoke;
+ }
+ 
+ #socials-container  h4{
+  font-family: "Rock Salt", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 200;
+  color: whitesmoke;
+ }
+ 
+ @media (min-width: 768px) {
+  #socials-container {
+    transform: rotate(-14deg);
+    border: 7px solid #fed136;
+    border-radius: 10px;
+   }
+ }
 
-hr.yellow-rule-20 {
-  border: 1px solid #fed136;
-  width: 45%;
+@media (min-width: 575px) {
+ #socials-container .section-heading {
+   padding-top: 30px;
+ }
 }
 
 #follow-me {
@@ -100,6 +111,12 @@ hr.yellow-rule-20 {
   background-color: rgba(0, 0, 0, 0.175);
 }
 
+/* DESTINATIONS */
+
+#destinations {
+  background-color: whitesmoke;
+}
+
 .destinations-modal hr {
   border: 1px solid #fed136;
 }
@@ -109,17 +126,11 @@ hr.yellow-rule-20 {
 padding-bottom: 20px;
 
 }
-
-.border-top-round {
-  border: 0px transparent;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+@media (min-width: 575px){
+#destinations .section-heading {
+  line-height: 4rem;
 }
-
-footer h5 {
-  font-family: "Rock Salt", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
 /* BEGINNING OF BOOTSTRAP */
 :root {
   --blue: #007bff;
@@ -10202,7 +10213,7 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-/*EDIT FROM 1.5REM*/  height: 1.5rem;
+/*EDIT FROM 1.5REM*/  height: 3.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Raleway", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10223,12 +10234,12 @@ img::-moz-selection {
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
-    font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
+    font-size: 1.5rem;
+    transition: font-size 0.4s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 3.5rem;
-    transition: height 0.3s ease-in-out;
+    height: 5.5rem;
+    transition: height 0.4s ease-in-out;
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
@@ -10240,7 +10251,7 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 3.5rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
